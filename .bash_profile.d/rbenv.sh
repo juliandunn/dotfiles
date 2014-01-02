@@ -1,9 +1,9 @@
 export PATH=$HOME/.rbenv/bin:$PATH
 
 # replace the stuff that would normally come from "rbenv init -" because the
-# completions path is wrong.
+# completions path is wrong under Macports
 
-export PATH="/Users/juliandunn/.rbenv/shims:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
 source "/opt/local/etc/bash_completion.d/rbenv"
 rbenv rehash 2>/dev/null
 rbenv() {
